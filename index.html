@@ -3,12 +3,13 @@
   <head>
   	<title>Google Homepage</title>
   	<style type="text/css">
-      main {
-       text-align: center; 
+      nav #menu-left {
+      	float: left;
+      	padding-left: 20px;
       }
 
-      nav {
-      	text-align: right;
+      nav #menu-right {
+      	float: right;
       	padding-right: 20px;
       }
 
@@ -27,9 +28,24 @@
       	color: grey;
       }
 
+      main {
+       text-align: center;
+      }
+
+      main img {
+      	padding-bottom: 10px;
+      }
+
       #search input {
       	margin-bottom: 10px;
-      	box-shadow: 2px 2px #777;
+      	box-shadow: 2px 2px lightgrey;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        background-color: gainsboro;
+        width: 100%;
       }
     }
   	</style>
@@ -37,10 +53,18 @@
   <body>
     <header>
   	  <nav>
-  	    <ul>
-  		  <li><a href="#about">About</a></li>
-  		  <li><a href="#store">Store</a></li>
-  		</ul>
+  	  	<div id="menu-left">
+  	      <ul>
+  		    <li><a href="#about">About</a></li>
+  		    <li><a href="#store">Store</a></li>
+  		  </ul>
+  		</div>
+  		<div id ="menu-right">
+  			<ul>
+  		      <li><a href="#gmail">Gmail</a></li>
+  		      <li><a href="#images">Images</a></li>
+  		  </ul>
+  		</div>
   	  </nav>
     </header>
     <main>
