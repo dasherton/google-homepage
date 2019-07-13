@@ -7,21 +7,25 @@
        text-align: center; 
       }
 
-      nav ul {
-        list-style-type: none;
-      	margin: 0;
-      	padding: 0;   	
+      nav {
+      	text-align: right;
+      	padding-right: 20px;
       }
 
-      nav li {
-        float: left;
+      nav li, footer li {
+        display: inline;
       }
 
-      nav li a {
-      	display: block;
-      	padding: 8px;
-      	background-color: #ddd;
+      nav a, footer a {
+      	text-decoration: none;
+      	color: black;
       }
+
+      nav a:hover, footer a:hover {
+      	text-decoration: underline;
+      	color: grey;
+      }
+    }
   	</style>
   </head>
   <body>
@@ -39,5 +43,12 @@
         <input type="text">
       </form>
     </main>
+    <footer>
+    	<ul>
+  		  <li><a href="#advertising">Advertising</a></li>
+  		  <li><a href="#business">Business</a></li>
+  		  <li><a href="#how-search-works">How Search Works</a></li>
+  		</ul>
+    </footer>
   </body>
 </html>
