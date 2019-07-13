@@ -1,0 +1,44 @@
+nav #menu-left {
+	float: left;
+	padding-left: 20px;
+}
+
+nav #menu-right {
+	float: right;
+	padding-right: 20px;
+}
+
+nav li, footer li {
+  display: inline;
+  padding: 7px;
+}
+
+nav a, footer a {
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover, footer a:hover {
+	text-decoration: underline;
+	color: grey;
+}
+
+main {
+ text-align: center;
+}
+
+main img {
+	padding-bottom: 10px;
+}
+
+#search input {
+	margin-bottom: 10px;
+	box-shadow: 2px 2px lightgrey;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: gainsboro;
+  width: 100%;
+}
